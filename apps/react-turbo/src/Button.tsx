@@ -1,5 +1,3 @@
 export function Button() {
-    return (
-        <button>Click Me</button>
-    )
+  return <button>Click Me Again</button>;
 }
