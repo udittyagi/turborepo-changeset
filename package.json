@@ -7,14 +7,19 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
+    "@types/node": "^22.5.5",
     "eslint": "^8.57.0",
     "prettier": "^3.2.5",
-    "turbo": "^2.1.2"
+    "turbo": "^2.1.2",
+    "vite-plugin-dts": "^4.2.1"
   },
   "name": "with-vite",
   "packageManager": "yarn@1.22.19",
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "@changesets/cli": "^2.27.8"
+  }
 }
