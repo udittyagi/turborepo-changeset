@@ -4,7 +4,8 @@
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "release": "yarn build && changeset publish"
   },
   "devDependencies": {
     "@types/node": "^22.5.5",
