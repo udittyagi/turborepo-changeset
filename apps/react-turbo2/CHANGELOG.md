@@ -1,5 +1,11 @@
 # udittyagi-react-turbo2
 
+## 0.0.5-beta.0
+
+### Patch Changes
+
+- 1d376f6: Heading Changed
+
 ## 0.0.4-beta.1
 
 ### Patch Changes
