@@ -1,5 +1,11 @@
 # udittyagi-react-turbo
 
+## 0.0.4-beta.2
+
+### Patch Changes
+
+- 48333fe: Button Changed
+
 ## 0.0.4-beta.1
 
 ### Patch Changes
