@@ -1,5 +1,12 @@
 # udittyagi-react-turbo
 
+## 0.0.5-beta.0
+
+### Patch Changes
+
+- e5b1186: This is Button test
+- 64dd23f: Another text added
+
 ## 0.0.4-beta.2
 
 ### Patch Changes
