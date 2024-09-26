@@ -1,5 +1,11 @@
 # udittyagi-react-turbo2
 
+## 0.0.6-beta.0
+
+### Patch Changes
+
+- 7dbf13a: Dummy For Dependent packages
+
 ## 0.0.5-beta.5
 
 ### Patch Changes
