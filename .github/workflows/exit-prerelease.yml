@@ -19,6 +19,12 @@ jobs:
       # that we can push later.
       - name: Checkout Repo
         uses: actions/checkout@v3
+        with:
+          # Checkout release branch entered when workflow was kicked off
+          ref: ${{ github.event.inputs.branch }}
+          # Fetch entire git history so  Changesets can generate changelogs
+          # with the correct commits
+          fetch-depth: 0
 
       - name: Setup Node.js 18.x
         uses: actions/setup-node@v3
@@ -28,9 +34,9 @@ jobs:
       - name: Write latest version to package.json
         run: |
           versionReactTurbo1=$(npm show udittyagi-react-turbo version)
-          yarn workspace udittyagi-react-turbo version --new-version "$versionReactTurbo1"
+          yarn workspace udittyagi-react-turbo version --new-version "$versionReactTurbo1" --no-git-tag-version
           versionReactTurbo2=$(npm show udittyagi-react-turbo2 version)
-          yarn workspace udittyagi-react-turbo2 version --new-version "$versionReactTurbo2"
+          yarn workspace udittyagi-react-turbo2 version --new-version "$versionReactTurbo2" --no-git-tag-version
           yarn
 
       - name: Remove pre.json
