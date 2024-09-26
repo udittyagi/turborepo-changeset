@@ -1,0 +1,14 @@
+{
+  "mode": "pre",
+  "tag": "beta",
+  "initialVersions": {
+    "udittyagi-react-turbo": "0.0.3",
+    "udittyagi-react-turbo2": "0.0.3",
+    "@repo/eslint-config": "0.0.0",
+    "@repo/typescript-config": "0.0.0",
+    "@repo/ui": "0.0.0"
+  },
+  "changesets": [
+    "perfect-hairs-bathe"
+  ]
+}
