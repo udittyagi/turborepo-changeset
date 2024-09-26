@@ -1,14 +1,15 @@
 {
-  "mode": "exit",
+  "mode": "pre",
   "tag": "beta",
   "initialVersions": {
-    "udittyagi-react-turbo": "0.0.4-beta.0",
-    "udittyagi-react-turbo2": "0.0.4-beta.0",
+    "udittyagi-react-turbo": "0.0.4-beta.1",
+    "udittyagi-react-turbo2": "0.0.4-beta.1",
     "@repo/eslint-config": "0.0.0",
     "@repo/typescript-config": "0.0.0",
     "@repo/ui": "0.0.0"
   },
   "changesets": [
-    "little-actors-listen"
+    "little-actors-listen",
+    "tiny-snails-bake"
   ]
 }
