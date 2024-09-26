@@ -1,5 +1,11 @@
 # udittyagi-react-turbo2
 
+## 0.0.5-beta.3
+
+### Patch Changes
+
+- d90fbff: New prerelease yaml
+
 ## 0.0.5-beta.2
 
 ### Patch Changes
