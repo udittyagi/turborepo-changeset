@@ -1,3 +1,3 @@
 export function Button() {
-  return <button>Click Me Again Again Beta</button>;
+  return <button>Click Me Again Again Beta Beta</button>;
 }

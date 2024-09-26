@@ -6,6 +6,7 @@
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "release": "yarn build && changeset publish",
+    "pre:release": "yarn build && changeset publish && yarn changeset pre exit",
     "pre:release:version": "yarn changeset pre enter beta && yarn changeset version"
   },
   "devDependencies": {
