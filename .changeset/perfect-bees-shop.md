@@ -3,4 +3,4 @@
 "udittyagi-react-turbo": patch
 ---
 
-Checking Connected packages
+Dummy For Dependent packages
