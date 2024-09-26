@@ -1,0 +1,12 @@
+{
+  "mode": "pre",
+  "tag": "beta",
+  "initialVersions": {
+    "udittyagi-react-turbo": "0.0.5",
+    "udittyagi-react-turbo2": "0.0.5",
+    "@repo/eslint-config": "0.0.0",
+    "@repo/typescript-config": "0.0.0",
+    "@repo/ui": "0.0.0"
+  },
+  "changesets": []
+}
