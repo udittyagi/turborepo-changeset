@@ -1,5 +1,12 @@
 # udittyagi-react-turbo2
 
+## 0.0.5
+
+### Patch Changes
+
+- f144802: Turbo 2 Changes
+- 3c93c1b: Pre Release Problem
+
 ## 0.0.5-beta.2
 
 ### Patch Changes
