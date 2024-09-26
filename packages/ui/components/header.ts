@@ -1,7 +1,3 @@
-export function Header({ title }: { title: string }) {
-  return `
-    <header id="header">
-      <h1>${title}</h1>
-    </header>
-    `;
+export function counter() {
+  return ("Counter from UI")
 }
