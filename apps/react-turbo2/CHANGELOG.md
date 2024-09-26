@@ -1,5 +1,11 @@
 # udittyagi-react-turbo2
 
+## 0.0.5-beta.5
+
+### Patch Changes
+
+- 571d410: Changing Pre release
+
 ## 0.0.5-beta.4
 
 ### Patch Changes
