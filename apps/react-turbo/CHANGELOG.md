@@ -1,5 +1,11 @@
 # udittyagi-react-turbo
 
+## 0.0.5-beta.2
+
+### Patch Changes
+
+- 3c93c1b: Pre Release Problem
+
 ## 0.0.5-beta.1
 
 ### Patch Changes
