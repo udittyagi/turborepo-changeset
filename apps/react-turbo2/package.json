@@ -1,6 +1,6 @@
 {
   "name": "udittyagi-react-turbo2",
-  "version": "0.0.4-beta.0",
+  "version": "0.0.4-beta.1",
   "type": "module",
   "main": "dist/index.es.js",
   "module": "dist/index.es.js",
