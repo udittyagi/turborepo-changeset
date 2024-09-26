@@ -10,6 +10,7 @@ concurrency: ${{ github.workflow }}-${{ github.ref }}
 jobs:
   release:
     name: Release
+    if: github.repository == 'udittyagi/turborepo-changeset'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
@@ -23,13 +24,15 @@ jobs:
       - name: Install Dependencies
         run: yarn
 
-      - name: Check for pre-release mode and exit pre release mode
-        id: pre_check
-        run: |
-          yarn checkRelease
+      - name: Check for pre.json file existence
+        id: check_files
+        uses: andstor/file-existence-action@v3.0.0
+        with:
+          files: ".changeset/pre.json"
 
-      - name: Create Release Pull Request or Publish to npm
+      - name: Create Release Pull Request or Publish to npm + Git
         id: changesets
+        if: steps.check_files.outputs.files_exists == 'false'
         uses: changesets/action@v1
         with:
           # This expects you to have a script called release which does a build for your packages and calls changeset publish
