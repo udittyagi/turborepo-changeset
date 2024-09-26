@@ -5,7 +5,9 @@
     "dev": "turbo dev",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "release": "yarn build && changeset publish"
+    "release": "yarn build && changeset publish",
+    "checkPreRelease": "node ./scripts/checkPreRelease.js prerelease",
+    "checkRelease": "node ./scripts/checkPreRelease.js release"
   },
   "devDependencies": {
     "@types/node": "^22.5.5",

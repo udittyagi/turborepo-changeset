@@ -23,6 +23,11 @@ jobs:
       - name: Install Dependencies
         run: yarn
 
+      - name: Check for pre-release mode and enter pre release mode
+        id: pre_check
+        run: |
+          yarn checkPreRelease
+
       - name: Create Release Pull Request or Publish to npm
         id: changesets
         uses: changesets/action@v1
