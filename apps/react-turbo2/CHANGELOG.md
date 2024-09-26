@@ -1,5 +1,11 @@
 # udittyagi-react-turbo2
 
+## 0.0.4-beta.1
+
+### Patch Changes
+
+- cea353a: Another summary
+
 ## 0.0.4-beta.0
 
 ### Patch Changes
