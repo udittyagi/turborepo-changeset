@@ -8,10 +8,5 @@
     "@repo/typescript-config": "0.0.0",
     "@repo/ui": "0.0.0"
   },
-  "changesets": [
-    "bright-crabs-run",
-    "chilled-ligers-cry",
-    "moody-apes-unite",
-    "warm-phones-obey"
-  ]
+  "changesets": []
 }

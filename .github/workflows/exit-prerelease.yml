@@ -1,0 +1,45 @@
+name: Exit Prerelease Mode
+
+on:
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: "Exit prerelease mode on release branch"
+        type: string
+        default: "release-"
+        required: true
+
+jobs:
+  exit_prerelease:
+    name: Changesets Exit Prerelease
+    runs-on: ubuntu-latest
+
+    steps:
+      # Check out the repository, using the Github Actions Bot app's token so
+      # that we can push later.
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js 18.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+
+      - name: Write latest version to package.json
+        run: |
+          versionReactTurbo1=$(npm show udittyagi-react-turbo version)
+          yarn workspace udittyagi-react-turbo version --new-version "$versionReactTurbo1"
+          versionReactTurbo2=$(npm show udittyagi-react-turbo2 version)
+          yarn workspace udittyagi-react-turbo2 version --new-version "$versionReactTurbo2"
+          yarn
+
+      - name: Remove pre.json
+        run: npx rimraf .changeset/pre.json
+
+      - name: Commit and push changes
+        run: |
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add -A
+          git commit -m "Exit prerelease mode"
+          git push

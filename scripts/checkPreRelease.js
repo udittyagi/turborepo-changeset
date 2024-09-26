@@ -51,6 +51,7 @@ const main = () => {
       );
       try {
         execSync("yarn changeset pre exit", { stdio: "inherit" }); // Adjust command if needed
+        // execSync("yarn changeset version", { stdio: "inherit" }); // Adjust command if needed
       } catch (error) {
         console.error("Failed to run changeset command:", error.message);
         process.exit(1); // Exit with error if the command fails
