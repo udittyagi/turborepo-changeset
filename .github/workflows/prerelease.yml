@@ -42,7 +42,7 @@ jobs:
           git commit -m 'Enter prerelease mode'
           git push
 
-       - name: Create prerelease PR
+      - name: Create prerelease PR
         # If .changeset/pre.json exists and we are not currently cutting a
         # release after merging a Version Packages PR
         if: steps.check_files.outputs.files_exists == 'true' && !startsWith(github.event.head_commit.message, 'Version Packages')
